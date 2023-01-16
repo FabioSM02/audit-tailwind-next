@@ -1,0 +1,15 @@
+Iniciando o projeto
+    => npm create vite@latest
+
+Instalando tailwindcss
+    => npm install -D tailwindcss
+    => npx tailwindcss init
+    => npx tailwindcss init -p
+    => npm install -D tailwindcss postcss autoprefixer
+
+
+-> Adicionar NextJS
+
+=> Biblioteca de icones
+    -> icons.com
+    -> lordicon.com

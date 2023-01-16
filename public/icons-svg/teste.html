@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60rem;
+            height: 15rem;
+        }
+
+        .table {
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+        }
+        
+        .pergunta {
+            padding: 1rem 1.5rem;
+            margin: 0 3rem;
+            border-radius: 16px;
+            background-color: rgba(253, 242, 228, .4);
+        }
+
+        .ask {
+            font-weight: bold;
+        }
+
+        .wrapperButton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: transparent;
+        }
+
+        .buttonyes {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            border: 0px;
+            background-image: url(./Web/icons8-assessments-32.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .buttonno {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            border: 0px;
+            background-image: url(./Web/icons8-cancel-50.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        button:hover {
+            background-color: rgba(58, 58, 58, 0.2);
+            transition-delay: .4s;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class='wrapper'>
+        <form action="" method='post' class='forms'>
+            <div class='table'>
+                <div class='wrapperButton'>
+                    <button value="sim" class="buttonyes" type="button">
+                    </button>
+                </div>
+
+                <div class="pergunta">
+                    <label class="ask">A empresa possui um sistema de backups?</label>
+                </div>
+                
+                <div class='wrapperButton'>
+                    <button value="nao"  class="buttonno" type="button">
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-[#1C1C1C] text-zinc-100;
+}
+
+/* #4444c7 
+    #666
+    #3D48F5
+    bg-blue-500
+
+
+*/
+
+/* Definir cores */
