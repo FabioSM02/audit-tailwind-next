@@ -1,6 +1,8 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
+
 import { Card } from './components/card';
 import { Header } from './components/header';
+import { MembersPhoto } from './components/membersPhoto';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -42,10 +44,17 @@ function App() {
 
       <section className="flex flex-col justify-center items-center h-[85%] mt-40">
         <p className="">Nossa Equipe</p>
+
+        {/* COLOCAR HOVER NAS FOTOS DOS INTEGRANTES DO GRUPO E MOSTRAR LINKEDIN E NOME */}
+
+        <div>
+          <MembersPhoto />
+        </div>
       </section>
 
-      <footer>
-        <p>Desenvolvido por SEGMA6 - 2023</p>
+      <footer className="bg-[#121111] h-16 py-16 flex flex-col items-center justify-center">
+        <p className="font-inter font-bold text-[#8D8DF3] pb-4">Desenvolvido por SEGMA6 - 2023</p>
+        <p className="font-inter font-semibold text-[#8D8DF3]">Fatec São Caetano do Sul</p>
       </footer>
     </>
   )
