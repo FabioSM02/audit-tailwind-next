@@ -3,13 +3,17 @@ import React, { useState } from 'react';
 import { Card } from './components/card';
 import { Header } from './components/header';
 import { MembersPhoto } from './components/membersPhoto';
+import { Login } from './pages/Login';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <Header />
+    <div className="flex items-center justify-center">
+
+      <Login />
+
+      {/* <Header />
 
       <main className="flex justify-between items-center mx-[10%] py-8 w-[80%] h-[85%]">
           <img src="../../public/icons-svg/engineering_team.svg" alt="Ilustração" className="mt-40 w-[500px] h-[500px] max-h-screen max-w-screen" />
@@ -19,7 +23,7 @@ function App() {
       </main>
 
       <section className="">
-        {/* degrade entre um preto ou cinza e um roxo escuro */}
+        {/* degrade entre um preto ou cinza e um roxo escuro 
       </section>
 
       <section className="flex flex-col justify-center items-center h-[85%]">
@@ -30,7 +34,7 @@ function App() {
             src="https://cdn.lordicon.com/pimvysaa.json"
             trigger="loop"
             style="width:250px;height:250px">
-        </lord-icon> */}
+        </lord-icon> 
         <div className="flex max-w-[80%]">
           <Card />
           <Card />
@@ -39,13 +43,13 @@ function App() {
       </section>
 
       <section className="">
-        {/* degrade entre um preto ou cinza e um roxo escuro volta */}
+        {/* degrade entre um preto ou cinza e um roxo escuro volta 
       </section>
 
       <section className="flex flex-col justify-center items-center h-[85%] mt-40">
         <p className="">Nossa Equipe</p>
 
-        {/* COLOCAR HOVER NAS FOTOS DOS INTEGRANTES DO GRUPO E MOSTRAR LINKEDIN E NOME */}
+        {/* COLOCAR HOVER NAS FOTOS DOS INTEGRANTES DO GRUPO E MOSTRAR LINKEDIN E NOME 
 
         <div>
           <MembersPhoto />
@@ -55,8 +59,8 @@ function App() {
       <footer className="bg-[#121111] h-16 py-16 flex flex-col items-center justify-center">
         <p className="font-inter font-bold text-[#8D8DF3] pb-4">Desenvolvido por SEGMA6 - 2023</p>
         <p className="font-inter font-semibold text-[#8D8DF3]">Fatec São Caetano do Sul</p>
-      </footer>
-    </>
+      </footer> */}
+    </div>
   )
 }
 
