@@ -13,3 +13,24 @@ Instalando tailwindcss
 => Biblioteca de icones
     -> icons.com
     -> lordicon.com
+
+
+
+https://www.google.com/search?q=animate-bounce&oq=animate-bounce&aqs=chrome..69i57.8097j0j1&sourceid=chrome&ie=UTF-8
+https://tailwindcss.com/docs/animation
+https://www.google.com/search?q=anima%C3%A7%C3%A3o+de+borda+usando+tailwind&oq=anima%C3%A7%C3%A3o+de+borda+usando+tailwind&aqs=chrome..69i57.10806j0j1&sourceid=chrome&ie=UTF-8
+https://www.youtube.com/watch?v=wqGp3n0wVj0
+https://www.youtube.com/watch?v=Tq84uogcByM
+https://www.youtube.com/watch?v=G1FykO6zncE
+
+https://tailwindcomponents.com/component/border-animation-1
+https://www.youtube.com/watch?v=bncBU7cXx2k - Principal
+https://www.youtube.com/watch?v=z9sHOXheE_M
+https://shuffle.dev/tailwind/classes/borders/border
+https://freefrontend.com/css-border-animations/ - Exemplos
+https://stackoverflow.com/questions/68459618/border-animations-in-tailwind-css
+    - https://codepen.io/giana/pen/yYBpVY
+https://www.youtube.com/watch?v=wqb0kaRdyyA
+https://www.youtube.com/watch?v=1Aq9OJuS3ok
+
+-> Adicionar biblioteca que estiliza barra de navegação

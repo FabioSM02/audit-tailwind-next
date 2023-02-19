@@ -9,7 +9,7 @@ interface MembersPhotoProps {
 export function MembersPhoto(){
     return(
         <>
-            <img src="" alt="" />
+            <img src="" alt="" className="" />
         </>
     );
 }
