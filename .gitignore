@@ -23,5 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 
-*.txt
+notes.txt
 /icons-svg/teste.html
