@@ -12,10 +12,10 @@ function App() {
 
   return (
     <>
-      <LoginOption />
+      <Cadastro />
 
       {/* <Header />
-      <Cadastro />
+      <LoginOption />
       <div className="flex flex-col items-center justify-center">
 
         // <Login />

@@ -6,9 +6,9 @@ import buildImg from '../../public/icons/building.svg';
 import auditImg from '../../public/icons/checking-boxes.svg';
 // import auditImg from '../../public/icons/analytics.svg';
 
-export function formaLogin(){
+//export function formaLogin(){
     // Talvez seja necessario duas funções para redirecionamento, mas no dia 24/02/2023 as 23:37 eu acredito que não   
-}
+//}
 
 export function LoginOption(){
     return (
