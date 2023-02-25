@@ -5,15 +5,17 @@ import { Header } from './components/header';
 import { MembersPhoto } from './components/membersPhoto';
 import { Cadastro } from './pages/Cadastro';
 import { Login } from './pages/Login';
+import { LoginOption } from './pages/LoginOption';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      <LoginOption />
 
-      <Cadastro />
       {/* <Header />
+      <Cadastro />
       <div className="flex flex-col items-center justify-center">
 
         // <Login />

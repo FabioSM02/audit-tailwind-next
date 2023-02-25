@@ -14,12 +14,6 @@ interface FieldProps {
 export function Field( { id, placeholder, type, maxLenght, minLenght, required, disable, pattern } : FieldProps ){
     return (
         <div className="flex m-0 p-0">
-            {/* <p className="text-indigo-500 h-[20px] px-2 bg-[#1C1C1C] text-xs relative top-[12px] left-[160px]">
-                {placeholder}
-            </p> */}
-            {/* <label className="text-indigo-500 h-[20px] px-2 bg-[#1C1C1C] text-xs relative top-[12px] left-[160px]">
-                {placeholder}
-            </label> */}
             <input 
                 id={id}
                 type={type} 
