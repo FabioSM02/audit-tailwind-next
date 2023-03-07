@@ -2,9 +2,9 @@ import React from "react";
 
 import { Field } from "../components/fields";
 
-export function CNPJMask(){
-    // adicionar um split no valor para poder partir o dado inteiro em um caracter de cada vez  
-}   
+// export function CNPJMask(){
+//     // adicionar um split no valor para poder partir o dado inteiro em um caracter de cada vez  
+// }   
 
 // CRIAR MASCARA PARA CNPJ, CELULAR/TELEFONE E CEP => DENTRO DA FUNÇÃO DE MASCARAR TAMBEM COLOCAR UM EVENTO QUE APAGUE LETRAS DO CAMPO
 // PORTE DA EMPRESA => SELECT 
@@ -18,32 +18,32 @@ export function Cadastro(){
             <p className="text-indigo-500 font-lexend font-bold my-10 text-2xl">
                 Cadastrar empresa
             </p>
-            <form action="" method="get" className="max-w-[1280px] flex-wrap mb-8">
+            <form action="" method="post" className="max-w-[1280px] flex-wrap mb-8">
                 <fieldset className="flex items-center justify-center">
-                    <Field id="cpnj" type="text" placeholder="CNPJ" required maxLenght={18} minLenght={14} pattern="[0-9]{14}" />
-                    <Field id="companyName" type="text" placeholder="Empresa" required disable />
-                    <Field id="corporateRepresentative" type="text" placeholder="Representante" required />
+                    <Field id="cpnj" type="text" placeholder="CNPJ" required maxLenght={18} minLenght={14} pattern="[0-9]+" autoComplete="off" title="Digite um CNPJ válido" />
+                    <Field id="companyName" type="text" placeholder="Empresa" required disable autoComplete="off" />
+                    <Field id="corporateRepresentative" type="text" placeholder="Representante" required autoComplete="off" />
                 </fieldset>
                 <fieldset className="flex items-center justify-center">
-                    <Field id="" type="text" placeholder="Cargo" required />
-                    <Field id="branch" type="text" placeholder="Segmento" required />
-                    <Field id="" type="select" placeholder="Porte da empresa" required/>
+                    <Field id="" type="text" placeholder="Cargo" required autoComplete="off" />
+                    <Field id="branch" type="text" placeholder="Segmento" required autoComplete="off" />
+                    {/* <Field id="" type="select" placeholder="Porte da empresa" required autoComplete="off" /> ARRUMAR */} 
+                    <Field id="phone" type="tel" placeholder="Número de telefone" required minLenght={11} maxLenght={11} pattern="[0-9+]" autoComplete="off" />
                 </fieldset>
                 <fieldset className="flex justify-center">
-                    <Field id="phone" type="tel" placeholder="Número de telefone" required minLenght={11} maxLenght={11} pattern="" />
-                    <Field id="cep" type="" placeholder="CEP" required pattern="00.000-000" minLenght={10} maxLenght={10} />
-                    <Field id="street" type="" placeholder="Rua" required disable />
+                    <Field id="cep" type="" placeholder="CEP" required pattern="[0-9]+$" minLenght={9} maxLenght={9} autoComplete="off" />
+                    <Field id="street" type="text" placeholder="Rua" required disable autoComplete="off" />
+                    <Field id="number" type="" placeholder="Número" required maxLenght={5} autoComplete="off" />
                 </fieldset>
                 <fieldset className="flex justify-center">
-                    <Field id="number" type="" placeholder="Número" required maxLenght={5} />
-                    <Field id="city" type="" placeholder="Cidade" required disable />
-                    <Field id="state" type="" placeholder="Estado" required disable />
+                    <Field id="city" type="" placeholder="Cidade" required disable autoComplete="off" />
+                    <Field id="state" type="" placeholder="Estado" required disable autoComplete="off" />
+                    <Field id="email" type="email" placeholder="Email" required autoComplete="off" />
                 </fieldset>
                 <fieldset className="flex justify-center">
-                    <Field id="email" type="email" placeholder="Email" required />
-                    {/* <Field id="checkEmail" type="email" placeholder="Confirmar Email" required /> */}
-                    <Field id="password" type="password" placeholder="Senha" maxLenght={30} minLenght={8} required />
-                    <Field id="checkPassword" type="password" placeholder="Confirmar senha" maxLenght={30} minLenght={8} required />
+                    <Field id="checkEmail" type="email" placeholder="Confirmar Email" required autoComplete="off" />
+                    <Field id="password" type="password" placeholder="Senha" maxLenght={30} minLenght={8} required autoComplete="off" />
+                    <Field id="checkPassword" type="password" placeholder="Confirmar senha" maxLenght={30} minLenght={8} required autoComplete="off" />
                 </fieldset>
                 {/* <fieldset className="flex justify-center">
                     <Field id="checkPassword" type="password" placeholder="Confirmar senha" maxLenght={30} minLenght={8} required />
@@ -55,9 +55,6 @@ export function Cadastro(){
                     </button>
                 </fieldset>
             </form>
-
-            {/* <Campo />
-            <Campo /> */}
         </div>
     );
 }

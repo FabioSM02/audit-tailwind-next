@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    @apply bg-[#1C1C1C] text-zinc-100;
+    @apply bg-[#1C1C1C] text-zinc-200;
 }
 
 /* #4444c7 

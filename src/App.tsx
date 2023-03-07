@@ -6,6 +6,7 @@ import { MembersPhoto } from './components/membersPhoto';
 import { Cadastro } from './pages/Cadastro';
 import { Login } from './pages/Login';
 import { LoginOption } from './pages/LoginOption';
+import { Questions } from './pages/Questions';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,6 +14,10 @@ function App() {
   return (
     <>
       <Cadastro />
+
+      {/* <Login /> */}
+
+      {/* <Questions /> */}
 
       {/* <Header />
       <LoginOption />

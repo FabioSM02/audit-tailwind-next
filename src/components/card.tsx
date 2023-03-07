@@ -28,7 +28,7 @@ export function Card(){
                     - Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 </p>
             </div>
-            <p className="text-purple-700 scale-100 font-black text-xl border-2 border-spacing-12 border-purple-900 px-4 rounded-lg hover:border-purple-700 hover:transition-all hover:scale-125">
+                <p className="text-purple-700 scale-100 font-black text-xl border-2 border-spacing-12 border-purple-900 px-4 rounded-lg hover:border-purple-700 hover:transition-all hover:scale-125">
                 $500
             </p>
         </div>

@@ -25,3 +25,6 @@ dist-ssr
 
 ./notes.txt
 /icons-svg/teste.html
+
+*.txt
+notes.txt
