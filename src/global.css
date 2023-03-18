@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 body {
-    @apply bg-[#1C1C1C] text-zinc-200;
+    /* @apply bg-[#1C1C1C] text-zinc-200; */
+    /* @apply bg-[#d1d6f0] text-zinc-800; */
+    @apply bg-indigo-100 text-zinc-800;
 }
 
 /* #4444c7 

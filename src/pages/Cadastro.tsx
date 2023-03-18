@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 import { Field } from "../components/fields";
 
@@ -19,18 +20,17 @@ export function Cadastro(){
                 Cadastrar empresa
             </p>
             <form action="" method="post" className="max-w-[1280px] flex-wrap mb-8">
-                <fieldset className="flex items-center justify-center">
+                <fieldset className="flex items-center justify-center" id="Empresa">
                     <Field id="cpnj" type="text" placeholder="CNPJ" required maxLenght={18} minLenght={14} pattern="[0-9]+" autoComplete="off" title="Digite um CNPJ válido" />
                     <Field id="companyName" type="text" placeholder="Empresa" required disable autoComplete="off" />
-                    <Field id="corporateRepresentative" type="text" placeholder="Representante" required autoComplete="off" />
-                </fieldset>
-                <fieldset className="flex items-center justify-center">
-                    <Field id="" type="text" placeholder="Cargo" required autoComplete="off" />
                     <Field id="branch" type="text" placeholder="Segmento" required autoComplete="off" />
-                    {/* <Field id="" type="select" placeholder="Porte da empresa" required autoComplete="off" /> ARRUMAR */} 
+                </fieldset>
+                <fieldset className="flex items-center justify-center" id="Representante">
+                    <Field id="corporateRepresentative" type="text" placeholder="Representante" required autoComplete="off" />
+                    <Field id="" type="text" placeholder="Cargo" required autoComplete="off" />
                     <Field id="phone" type="tel" placeholder="Número de telefone" required minLenght={11} maxLenght={11} pattern="[0-9+]" autoComplete="off" />
                 </fieldset>
-                <fieldset className="flex justify-center">
+                <fieldset className="flex justify-center" id="Local">
                     <Field id="cep" type="" placeholder="CEP" required pattern="[0-9]+$" minLenght={9} maxLenght={9} autoComplete="off" />
                     <Field id="street" type="text" placeholder="Rua" required disable autoComplete="off" />
                     <Field id="number" type="" placeholder="Número" required maxLenght={5} autoComplete="off" />
@@ -40,15 +40,11 @@ export function Cadastro(){
                     <Field id="state" type="" placeholder="Estado" required disable autoComplete="off" />
                     <Field id="email" type="email" placeholder="Email" required autoComplete="off" />
                 </fieldset>
-                <fieldset className="flex justify-center">
+                <fieldset className="flex justify-center" id="Auth">
                     <Field id="checkEmail" type="email" placeholder="Confirmar Email" required autoComplete="off" />
                     <Field id="password" type="password" placeholder="Senha" maxLenght={30} minLenght={8} required autoComplete="off" />
                     <Field id="checkPassword" type="password" placeholder="Confirmar senha" maxLenght={30} minLenght={8} required autoComplete="off" />
                 </fieldset>
-                {/* <fieldset className="flex justify-center">
-                    <Field id="checkPassword" type="password" placeholder="Confirmar senha" maxLenght={30} minLenght={8} required />
-                </fieldset> */}
-
                 <fieldset className="flex items-center justify-center mt-8">
                     <button className="flex justify-center items-center h-12 w-40 border-[.4px] bg-indigo-100 text-indigo-500 font-bold  border-indigo-500 rounded-md focus:outline-none hover:bg-indigo-300 hover:text-indigo-800 hover:transition-colors">
                         Cadastrar

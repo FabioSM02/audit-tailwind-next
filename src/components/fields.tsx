@@ -21,7 +21,7 @@ export function Field( { id, placeholder, type, maxLenght, minLenght, required, 
                 type={type} 
                 maxLength={maxLenght} 
                 minLength={minLenght} 
-                className="w-72 h-10 px-4 m-5 text-[16px] rounded-md bg-transparent border-[.2px] border-indigo-900 focus:border-indigo-500 focus:outline-none" 
+                className="w-72 h-10 px-4 m-5 text-[16px] text-indigo-500 rounded-md bg-indigo-200 border-[.2px] focus:border-indigo-500 focus:outline-none placeholder:text-indigo-600 " 
                 placeholder={placeholder} 
                 required={required}
                 disabled={disable}
