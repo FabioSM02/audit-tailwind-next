@@ -1,15 +1,15 @@
 import React from "react";
 
 interface MembersPhotoProps {
-    way: string;
-    description: string;
+    image: string;
+    description?: string;
 }
 
 // export function MembersPhoto({ way }: MembersPhotoProps){
-export function MembersPhoto(){
+export function MembersPhoto({ image, description } : MembersPhotoProps){
     return(
-        <>
-            <img src="" alt="" className="" />
-        </>
+        <div className="hover:bg-slate-800 hover:bg-opacity-25 rounded-[50%] z-20 block">
+            <img src={image} alt={description} className="flex h-48 w-48 rounded-[50%]" />
+        </div>
     );
 }

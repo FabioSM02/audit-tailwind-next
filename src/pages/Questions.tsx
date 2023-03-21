@@ -1,5 +1,8 @@
 import React from "react";
 
+// text-zinc-700
+// text-[#525151]
+
 export function Questions(){
     return (
         <div className="flex flex-col items-center h-[100vh] w-screen">
@@ -8,10 +11,10 @@ export function Questions(){
             </p>
             <form action="" method="post" className="w-[80vw] flex flex-col items-center">
                 <fieldset className="h-36 pb-28">
-                    <p className="flex justify-center font-inter text-[#525151] font-bold text-base pb-12">
+                    <p className="flex justify-center font-inter text-zinc-600 font-bold text-base pb-12">
                         Tópico 5
                     </p>
-                    <p className="font-inter text-[#525151] font-bold text-base">
+                    <p className="font-inter text-zinc-600 font-bold text-base">
                         Política de Segurança da Informação
                     </p>
                 </fieldset>
