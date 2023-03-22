@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // focus:border-[#4444C7]
 
@@ -21,11 +21,13 @@ export function Header(){
 
             {/* { setIsSignIn : (<></>) ?? (<></>) } */}
 
-            <Link to="/signIn" className="px-20 h-12 w-25 flex gap-4 items-center rounded-md outline-none focus:outline-none" type="button">
+            <button className="px-20 h-12 w-25 flex gap-4 items-center rounded-md outline-none focus:outline-none" type="button">
                 <img src="/icons/user30.png" className="outline-none" alt="usuario" />
                 {/* Ou o icone ou escrito Login */}
-                <p className="text-zinc-800 font-lexend hover:text-[#8D8DF3] hover:transition-all">Login</p>
-            </Link>
+                <Link to="/signin">
+                    <p className="text-zinc-800 font-lexend hover:text-[#8D8DF3] hover:transition-all">Login</p>
+                </Link>
+            </button>
         </header>
     );
 }

@@ -10,34 +10,33 @@ import { Login } from './pages/Login';
 import { LoginOption } from './pages/LoginOption';
 import { Cadastro } from './pages/Cadastro';
 import { Questions } from './pages/Questions';
+import { Resultado } from './pages/resultados';
 
 const router = createBrowserRouter([
-  {
+    {
       path: "/",
       element: <App />,
-      children: [
-          {
-              path: "/",
-              element: <Index />
-          },
-          {
-              path: "/signIn",
-              element: <Login />
-          },
-          {
-              path: "/signUp",
-              element: <Cadastro />
-          },
-          {
-              path: "/signInOptions",
-              element: <LoginOption />
-          },
-          {
-              path: "questions",
-              element: <Questions />
-          },
-      ]
-  },
+    },
+    {
+      path: "/signin",
+      element: <Login />
+    },
+    {
+      path: "/signUp",
+      element: <Cadastro />
+    },
+    {
+      path: "/signInOptions",
+      element: <LoginOption />
+    },
+    {
+      path: "questions",
+      element: <Questions />
+    },
+    {
+      path: 'results',
+      element: <Resultado />
+    }
 ])
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(

@@ -8,14 +8,14 @@ import { Questions } from './pages/Questions';
 
 function App() {
   return (
-    <>
-        {/* <Index /> */}
-        <Cadastro />
+      <>
+        <Index />
+        {/* <Cadastro /> */}
         {/* <Login /> */}
         {/* <LoginOption /> */}
         {/* <Questions /> */}
-    </>
-  )
+      </>
+  );
 }
 
 export default App
