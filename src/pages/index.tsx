@@ -7,6 +7,7 @@ import { Login } from "./Login";
 
 import EnginneringTeamImg from '../icons/engineering_team.svg';
 import Fabio from '../assets/Fabio.png';
+import User from '../assets/user.png';
 
 export function Index(){
     return (
@@ -42,13 +43,13 @@ export function Index(){
                 {/* COLOCAR HOVER NAS FOTOS DOS INTEGRANTES DO GRUPO E MOSTRAR LINKEDIN E NOME */}
 
                     <div className="flex justify-between w-[860px]">
-                        <MembersPhoto image={Fabio} description="membro 01" />
-                        <MembersPhoto image={Fabio} description="membro 01" />
-                        <MembersPhoto image={Fabio} description="membro 01" />
+                        <MembersPhoto image={User} description="membro 01" />
+                        <MembersPhoto image={User} description="membro 01" />
+                        <MembersPhoto image={User} description="membro 01" />
                     </div>
                     <div className="flex justify-center gap-36 w-[860px]">
-                        <MembersPhoto image={Fabio} description="membro 01" />
-                        <MembersPhoto image={Fabio} description="membro 01" />
+                        <MembersPhoto image={User} description="membro 01" />
+                        <MembersPhoto image={User} description="membro 01" />
                     </div>
                 </section>
 

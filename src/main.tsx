@@ -10,6 +10,7 @@ import { Login } from './pages/Login';
 import { LoginOption } from './pages/LoginOption';
 import { Cadastro } from './pages/Cadastro';
 import { Questions } from './pages/Questions';
+import { Forms } from './pages/Forms';
 import { Resultado } from './pages/resultados';
 
 const router = createBrowserRouter([
@@ -31,7 +32,7 @@ const router = createBrowserRouter([
     },
     {
       path: "questions",
-      element: <Questions />
+      element: <Forms />
     },
     {
       path: 'results',
